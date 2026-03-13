@@ -1,0 +1,132 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.scijava</groupId>
+    <artifactId>pom-scijava</artifactId>
+    <version>32.0.0</version>
+  </parent>
+
+  <groupId>com.strengthlaw</groupId>
+  <artifactId>StrengthLawExtractor</artifactId>
+  <version>0.1.0</version>
+  <name>StrengthLawExtractor</name>
+  <description>Fiji plugin for porosity, surface area, mean curvature, Euler characteristic, STL export</description>
+  <url>https://github.com/strengthlaw/StrengthLawExtractor</url>
+  <inceptionYear>2025</inceptionYear>
+
+  <organization>
+    <name>StrengthLaw</name>
+    <url>https://github.com/strengthlaw</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>emma</id>
+      <name>Emma</name>
+      <organization>StrengthLaw</organization>
+    </developer>
+  </developers>
+
+  <contributors>
+    <contributor>
+      <name>Community</name>
+    </contributor>
+  </contributors>
+
+  <mailingLists>
+    <mailingList>
+      <name>Issues</name>
+      <archive>https://github.com/strengthlaw/StrengthLawExtractor/issues</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <url>https://github.com/strengthlaw/StrengthLawExtractor</url>
+    <connection>scm:git:https://github.com/strengthlaw/StrengthLawExtractor.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/strengthlaw/StrengthLawExtractor/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>GitHub Actions</system>
+    <url>https://github.com/strengthlaw/StrengthLawExtractor/actions</url>
+  </ciManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>8</maven.compiler.release>
+    <license.licenseName>MIT</license.licenseName>
+    <license.copyrightOwners>StrengthLaw</license.copyrightOwners>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.imagej</groupId>
+      <artifactId>imagej</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.imagej</groupId>
+      <artifactId>ij</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.imagej</groupId>
+      <artifactId>imagej-ops</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.imagej</groupId>
+      <artifactId>imagej-mesh</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.imglib2</groupId>
+      <artifactId>imglib2</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.imagej</groupId>
+      <artifactId>imagej-legacy</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration><release>8</release></configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+      </plugin>
+      
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>scijava.public</id>
+      <url>https://maven.scijava.org/content/groups/public</url>
+    </repository>
+  </repositories>
+</project>
