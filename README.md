@@ -78,6 +78,10 @@ To verify the plugin:
     
   - surface area 
 
+
+<img width="2286" height="1235" alt="eg" src="https://github.com/user-attachments/assets/0293288d-3113-416c-82df-3c001bb5642d" />
+
+
 ### Notes
 Mesh mode computes surface area using marching cubes.
 Voxel mode is faster and suitable for previews.
